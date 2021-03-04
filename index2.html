@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <script type="text/javascript" src="./main.js"></script>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <header id="heading">
+      
+      <h1>
+        <a id="logo" href="./index.html">
+          <img alt="Hotel" src="./img hotel/logo transparente.png" width="207.75" height="72"/>
+        </a>
+      </h1>
+      <div id="menu">
+        <nav>
+          <ul id="listamenu">
+            <li class="item-menu">
+              <a href="#">
+                  <img alt="HOME" src="./img hotel/Home Transparente.png" width="100" height="100">
+            </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                  <img alt="HOSPEDAGENS" src="./img hotel/Hospedagem Transparente.png" width="100" height="100">
+            </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                  <img alt="PACOTES" src="./img hotel/Pacotes Transparente.png" width="100" height="100">
+            </a>
+            </li>
+            <li class="item-menu">
+              <a href="#">
+                  <img alt="PASSAGENS" src="./img hotel/Passagem transparente.png" width="100" height="100">
+            </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h2>
+        <button class="textbox2" id="login" name="login" href="#">Login</button>
+      </h2>
+      <div id="font-size">
+        <button id="aMais" name="aMais">
+          <img alt="A+" src="./img hotel/A+ Transparente.png" width="50" height="50"/>
+        </button>
+        <button id="aMenos" name="aMenos">
+          <img alt="A-" src="./img hotel/A- Transparente.png" width="50" height="50"/>
+        </button>
+      </div>
+    </header>
+    <section id="area1">
+      <div id="procura">
+        <h1 id="textpassagens" >
+        Passagens aéreas com reserva flexível
+        </h1>
+        <form class="procura" id="radio1">
+         <div>
+           <input type="radio" id="ida" name="tipodeviagem" value="ida">
+           <label for="ida">Só ida</label>
+         </div><br>
+         <div>
+           <input type="radio" id="ida&volta" name="tipodeviagem" value="ida&volta">
+           <label for="ida&volta">Ida e volta</label>
+          </div><br>
+          <div>
+           <input type="radio" id="multidestino" name="tipodeviagem" value="multidestino">
+           <label for="multidestino">Multiplos Destinos</label>
+          </div><br>
+          </form>
+        <div id="viagem">
+          <form class="procura">
+            <div>
+            <label for="origem">Origem:</label><br>
+            <input class="textbox" type="text" id="origem" name="origem" /><br>
+          </div>
+          <div>
+            <label for="destino">Destino:</label><br>
+            <input class="textbox" type="text" id="destino" name="destino" />
+          </div>
+            <div>
+              <label for="data">Data:</label>
+              <div>
+                <input class="textbox2" placeholder="  Ida" type="text" name="dataida" />
+                <input class="textbox2" placeholder="  Volta" type="text" name="datavolta" />
+              </div>
+            </div>
+            <div>
+              <input id="buscar" type="submit" onclick="alert('ainda nao implementado')" value="BUSCAR" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="base" class="base">
+      <article>
+        <p class="paragrafo">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+          recusandae neque molestias, obcaecati unde nesciunt, dolorum sint
+          aperiam officia similique reiciendis rem maiores dolor. Harum velit
+          eius nulla cupiditate dolorum!
+        </p>
+      </article>
+      Executivo
+      <p class="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Ullam est quae adipisci iure natus voluptate non laborum cum sed,
+          eos dolor deserunt a ipsa voluptates nobis nesciunt blanditiis in.
+         Doloribus?
+        </p>
+      <article class="paragrafo">Imagem 1 <br><br> Imagem 2 <br><br> Imagem 3 <br><br></article>
+      Luxo
+      <p class="paragrafo">Lorem ipsum dolor sit amet consectetur,
+         adipisicing elit. Dolore facere cupiditate, quae dolor,
+          earum necessitatibus, pariatur natus ducimus itaque libero repellat ipsum.
+         Praesentium aliquam dolorum eius magnam nulla reiciendis optio?
+        </p>
+      <article class="paragrafo">Imagem 1 <br><br> Imagem 2 <br><br> Imagem 3 <br><br></article>
+      <p class="paragrafo">
+        Luxo Plus
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta veritatis eveniet,
+         veniam esse quaerat magni a excepturi voluptates aspernatur,
+         amet corporis ducimus magnam quisquam, explicabo vel blanditiis libero? Doloribus, unde!
+      </p>
+      <article class="paragrafo">Imagem 1 <br><br> Imagem 2 <br><br> Imagem 3 <br><br></article>
+    </section>
+    <footer id="footer">
+    <div id="email">
+      <div>
+        <img id="img-email" src="./img hotel/e-mail Transparente.png" alt="E-MAIL" width="86" height="86">
+      </div>
+      <div>
+        Inscreva-se para receber ofertas exclusivas<br>
+        <form action="mailto:danielmcolares@edu.unifor.br" class="form-email" method="post">
+          
+          <input type="text" id="textmail" class="textbox" placeholder=" Insira seu e-mail" name="mail"><br>
+          <div id="footercenter"></div>
+          <input type="submit" id="butaomail" onclick="alert('Obrigado por cadastrar seu email.')" value="Receber novidades!!">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var base =document.querySelector(".base");
+    var fontSize = 100;
+    var modificador = 10;
+    var aMais = document.getElementById("aMais").addEventListener("click" , function(){
+        fontSize += modificador;
+        base.style.fontSize = fontSize+"%"
+    });
+    var aMenos = document.getElementById("aMenos").addEventListener("click" , function(){
+        fontSize -= modificador;
+        base.style.fontSize = fontSize+"%";
+    });
+    </script>
+  </body>
+</html>
